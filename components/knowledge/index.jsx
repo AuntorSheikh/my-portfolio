@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "../button";
 
 const Knowledge = () =>{
     return(
@@ -11,6 +12,13 @@ const Knowledge = () =>{
              <input className="shadow appearance-none border md:rounded-full w-full py-3 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Start a Post"></input>
         </div>
         <div><hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr></div>
+        
+        <a href="#">
+        <div className="flex justify-between md:justify-between h-10 md:h-full w-60 md:w-full">
+            <Button button="Photo" imgSrc= {"../../images/photo.svg"}/>
+            <Button button="Write Article" imgSrc= {"../../images/write.svg"}/>
+        </div>
+        </a>
         </div>
         </>
 
