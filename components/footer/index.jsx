@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(){
     return(
-        <footer className="bg-[#a3e635]  mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+        <footer className="bg-[#a3e635] flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
             <div>
             <a className="ml-8 text-center font-normal text-blue-gray-900 md:mb-0">© 2022 Auntor. All rights reserved.</a>
             </div>

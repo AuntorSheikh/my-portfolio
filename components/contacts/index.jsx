@@ -2,38 +2,94 @@ import React from "react";
 
 const Contact = () =>{
     return(
-        <div>
-            <div className="relative w-48 p-8  ml-8 text-purple-800 bg-[#fffbeb] hover:bg-[#fce7f3] rounded-md shadow-2xl">
-            <h1 className="text-3xl">/Contacts</h1>
-            <h5>Who am i?</h5>
+        <>
+    <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mb-4">
+            <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+                <p className="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-purple-800">
+                    Contact
+                </p>
+                <h2
+                    className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-black text-3xl sm:text-5xl">
+                    Get in Touch
+                </h2>
+                <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-purple-800">Engineer | Innovation maven | Visionary with an Entrepreneur mindset</p>
+            </div>
         </div>
-        <div className="flex justify-between">
-            <h1 className="w-96 ml-8">
-            I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
-            </h1>
-            <div className="flex flex-row mt-8">
-            <div className="relative w-auto p-8  ml-8 text-purple-800 bg-[#fffbeb] hover:bg-[#fce7f3] rounded-md shadow-2xl">
-                <div className="flex flex-col">
-                    <h1>Support me here</h1>
-                    <h1>+8801950588597</h1>
+        <div className="flex items-stretch justify-center">
+            <div className="grid md:grid-cols-2">
+                <div className="h-full pr-6">
+                <p className="mt-3 mb-12 text-4xl text-gray-600 dark:text-purple-800">
+                    Who am i?
+                    </p>
+                    <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-black">
+                    I am Md Auntor Shak, a strong engineering professional with a Bachelor's degree focused in Computer Engineering from North South University. I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
+                    </p>
+                    <ul className="mb-6 md:mb-0">
+                        <li className="flex">
+                            <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" className="h-6 w-6">
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                    <path
+                                        d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div className="ml-4 mb-4">
+                                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">My Address
+                                </h3>
+                                <p className="text-gray-600 dark:text-slate-400">Dhaka,</p>
+                                <p className="text-gray-600 dark:text-slate-400">Bangladesh</p>
+                            </div>
+                        </li>
+                        <li className="flex">
+                            <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" className="h-6 w-6">
+                                    <path
+                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                    </path>
+                                    <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                    <path d="M15 3a6 6 0 0 1 6 6"></path>
+                                </svg>
+                            </div>
+                            <div className="ml-4 mb-4">
+                                <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-black">Contact
+                                </h3>
+                                <p className="text-gray-600 dark:text-slate-400">Mobile: +8801950588597</p>
+                                <p className="text-gray-600 dark:text-slate-400">Mail: mdauntorshak97@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
+                    <h2 className="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
+                    <form id="contactForm">
+                        <div className="mb-6">
+                            <div className="mx-0 mb-1 sm:mb-4">
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <label for="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name"></input>
+                                </div>
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <label for="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email"></input>
+                                </div>
+                            </div>
+                            <div className="mx-0 mb-1 sm:mb-4">
+                                <label for="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <button type="submit" className="w-full bg-blue-800 text-black px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div className="relative w-auto p-8  ml-8 text-purple-800 bg-[#fffbeb] hover:bg-[#fce7f3] rounded-md shadow-2xl">
-                <div className="flex flex-col">
-                    <h1>Message me here</h1>
-                    <div className="flex flex-row">
-                    <a href="#">
-                      <img className="w-4 h-4 mt-1 p-px flex items-center justify-center" src={"../../images/email.svg"} alt=" Picture " />
-                    </a>
-                    <h1 className="">auntor.shak@northsouth.edu</h1>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
         </div>
-
-        </div>
-    );
+    </div>
+        </>
+        )
 };
 export default Contact;
